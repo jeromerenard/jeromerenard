@@ -46,7 +46,7 @@ export default function Hero() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Let's work together
+            Let&apos;s work together
           </motion.button>
         </div>
           <motion.div className="absolute left-24 bottom-16" style={{y}} > 

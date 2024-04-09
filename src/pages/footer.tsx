@@ -23,7 +23,7 @@ export default function Footer() {
       <div className="h-full w-full bg-black flex flex-col items-center justify-center">
         <div className="flex">
           <h2 className="text-center text-9xl text-white font-bold">
-            Let's Work
+            Let&apos;s Work
             <br />
             Together
           </h2>
