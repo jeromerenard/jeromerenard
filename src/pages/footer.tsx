@@ -37,7 +37,7 @@ export default function Footer() {
             Get in touch
           </motion.button>
         </div>
-        <div className="absolute bottom-16 right-24 text-red-500">
+        <div className="absolute bottom-16 right-24">
           <SocialIcon />
         </div>
       </div>
