@@ -17,14 +17,14 @@ function timeout(delay: number) {
 
 export default  function Home() {
 
-  useEffect( () => {
+  /* useEffect( () => {
     (
       async () => {
           const LocomotiveScroll = (await import('locomotive-scroll')).default
           const locomotiveScroll = new LocomotiveScroll();
       }
     )()
-  }, [])
+  }, [])*/
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
