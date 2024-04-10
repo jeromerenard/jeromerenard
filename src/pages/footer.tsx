@@ -1,7 +1,7 @@
 import { useScroll, motion, useTransform, useSpring } from "framer-motion";
 import { useRef } from "react";
 import SocialIcon from "@/components/common/social-h";
-import { HoverBorderGradient } from "@/components/ui/hoverbodergradient";
+import Link from "next/link";
 
 export default function Footer() {
   const container = useRef(null);

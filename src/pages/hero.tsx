@@ -2,7 +2,6 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { AuroraBackground } from "@/components/ui/aurora";
-import { HoverBorderGradient } from "@/components/ui/hoverbodergradient";
 import SocialIcon from "@/components/common/social-v";
 import CurrentDate from "@/components/common/currentdate";
 import { useRef } from "react";
