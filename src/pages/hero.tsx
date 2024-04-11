@@ -47,7 +47,7 @@ export default function Hero() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              <Link href="/contact">Let&apos;s work together</Link>
+              <Link href="/contact">Let&apos;s work together.</Link>
             </motion.button>
           </div>
           <motion.div className="absolute left-24 bottom-16 invisible lg:visible" style={{ y }}>
