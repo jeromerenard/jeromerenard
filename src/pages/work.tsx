@@ -22,6 +22,7 @@ export default function Work() {
         </motion.div>
         <motion.div className="flex-1 pl-24 2xl:pl-64 pr-24 2xl:pr-64" style={{ y }}>
           <iframe
+            title="Spotify Playlist Portfolio"
             className="rounded-3xl h-[38dvh]"
             src="https://open.spotify.com/embed/playlist/4JTckBoo42kMfL08AqDjsF?utm_source=generator&theme=0"
             width="100%"

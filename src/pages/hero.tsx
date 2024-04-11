@@ -5,6 +5,7 @@ import { AuroraBackground } from "@/components/ui/aurora";
 import SocialIcon from "@/components/common/social-v";
 import CurrentDate from "@/components/common/currentdate";
 import { useRef } from "react";
+import Link from "next/link";
 export default function Hero() {
 
   const container = useRef(null);
@@ -45,7 +46,7 @@ export default function Hero() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Let&apos;s work together
+            <Link href="/contact">Let&apos;s work together</Link>
           </motion.button>
         </div>
           <motion.div className="absolute left-24 bottom-16" style={{y}} > 
