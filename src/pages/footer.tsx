@@ -30,12 +30,12 @@ export default function Footer() {
         </div>
         <div className="mt-24">
           <motion.button
-          href="/contact"
             className="px-8 h-auto py-3 text-xl text-jgold border-2 border-spacing-16 border-jgold rounded-full shadow-2xl shadow-cyan-500/60"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Get in touch
+            <Link href="/contact">
+            Get in touch</Link>
           </motion.button>
         </div>
         <div className="absolute bottom-16 right-24">
