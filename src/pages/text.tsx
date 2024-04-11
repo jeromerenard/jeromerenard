@@ -1,5 +1,4 @@
 import Work from "./work"
-import Work2 from "./work copy"
 import Trust from "./trust"
 
 export  default function Test(){

@@ -15,20 +15,21 @@ export default function Trust() {
     offset: ["start end", "end end"],
   });
 
-  const x = useTransform(scrollYProgress, [1, 0], [0, 100]);
-  const xx = useTransform(scrollYProgress, [1, 0], [0, -100]);
+  const x = useTransform(scrollYProgress, [1, 0], [0, 800]);
+  const x2 = useTransform(scrollYProgress, [1, 0], [0, -800]);
 
   const y = useTransform(scrollYProgress, [1, 0], [0, -800]);
-  const yy = useTransform(scrollYProgress, [1, 0], [0, -800]);
-
+  const y2 = useTransform(scrollYProgress, [1, 0], [0, -800]);
+  
+  const opacity = useTransform(scrollYProgress, [0.5, 1], [0, 1]);
 
   return (
     <motion.main className="size-full h-screen py-16" id="trust"
     ref={container}
 
     >
-      <div className="h-full bg-gray-900 w-full rounded-3xl flex flex-col items-center justify-center">
-        <motion.div className="" style={{y}} >
+      <motion.div className="h-full bg-gray-900 w-full rounded-3xl flex flex-col items-center justify-center">
+        <motion.div className="" style={{y, opacity}}>
         <h1 className="text-white text-9xl font-bold">They Trusted Me</h1>
         <div className="text-base text-white py-4 text-center">
           Over 150 millons streams in 15+ countries.
@@ -36,7 +37,7 @@ export default function Trust() {
         </motion.div>
        
 
-        <motion.div className="flex flex-row pt-32 space-x-32 h-[200px]" style={{x}} >
+        <motion.div className="flex flex-row pt-32 space-x-32 h-[200px] animate-pulse" style={{x}} >
           <Image
             src={UMGLogo}
             alt="UMG Logo"
@@ -81,7 +82,7 @@ export default function Trust() {
             Jerome Renard - James Guido - Lana Del Rey - Madona - Aaron - Kyle
           </motion.span>
         </div>
-      </div>
+      </motion.div>
     </motion.main>
   );
 }

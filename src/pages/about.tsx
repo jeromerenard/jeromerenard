@@ -1,18 +1,19 @@
-import Image from "next/image"
-import JrNeve from "../../public/JeromeRenardNeve.jpeg"
+import Image from "next/image";
+import JrNeve from "../../public/JeromeRenardNeve.jpeg";
 import { useScroll, motion, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-export default function About(){
+export default function About() {
   const container = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: container,
-        offset: ["start end", "end start"]
-    })
-  const height = useTransform(scrollYProgress, [0, 0.9], [50, 0])
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "end start"],
+  });
 
-    return(
-        <main className="size-full h-[80vh] py-16" ref={container}>
+  const height = useTransform(scrollYProgress, [0, 0.9], [50, 0]);
+
+  return (
+    <main className="size-full h-[80vh] py-16" ref={container}>
       <div className="h-full w-full flex items-center px-64 gap-32">
         <div className="flex-1 flex-col">
           <h2 className="text-9xl font-bold pb-16">This Is Me</h2>
@@ -42,8 +43,8 @@ export default function About(){
             Studio La Grande Armee in Paris, and his sessions with Simon
             Phillips, were the catalyst for bringing him to Los-Angeles.
           </span>
-                </div>
-        <div className="flex-1 flex-col">
+        </div>
+        <motion.div className="flex-1 flex-col">
           <Image
             src={JrNeve}
             alt="Jerome Renard"
@@ -51,12 +52,11 @@ export default function About(){
             height={1000}
             className="rounded-2xl drop-shadow-2xl"
           />
-        </div>
+        </motion.div>
       </div>
-      <motion.div style={{height}} className="circleContainer">
+      <motion.div style={{ height }} className="circleContainer">
         <div className="circle"></div>
       </motion.div>
-      
     </main>
-    )
+  );
 }
