@@ -13,11 +13,11 @@ export default function About() {
   const height = useTransform(scrollYProgress, [0, 0.9], [50, 0]);
 
   return (
-    <main className="size-full h-[80vh] py-16" ref={container}>
-      <div className="h-full w-full flex items-center px-64 gap-32">
-        <div className="flex-1 flex-col">
-          <h2 className="text-9xl font-bold pb-16">This Is Me</h2>
-          <span className="mr-48 text-balance">
+    <main className="size-full h-full lg:h-[80vh] lg:py-16" ref={container}>
+      <div className="lg:h-full w-full flex flex-col lg:flex-row items-center px-8 lg:px-64 lg:gap-32">
+        <div className="flex-1 pb-8">
+          <h2 className="text-4xl lg:text-9xl font-bold pb-2 lg:pb-16">This Is Me</h2>
+          <span className="lg:mr-48 text-balance">
             Jerome Renard is Belgian-Born Mixing Engineer, living in sunny
             Los-Angeles. <br />
             As a mixer he believes that every song deserves to have an engineer
@@ -44,7 +44,7 @@ export default function About() {
             Phillips, were the catalyst for bringing him to Los-Angeles.
           </span>
         </div>
-        <motion.div className="flex-1 flex-col">
+        <motion.div className="flex-1">
           <Image
             src={JrNeve}
             alt="Jerome Renard"

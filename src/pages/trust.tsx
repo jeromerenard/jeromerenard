@@ -29,15 +29,15 @@ export default function Trust() {
 
     >
       <motion.div className="h-full bg-gray-900 w-full rounded-3xl flex flex-col items-center justify-center">
-        <motion.div className="" style={{y, opacity}}>
-        <h1 className="text-white text-9xl font-bold">They Trusted Me</h1>
+        <motion.div className="text-center" style={{y, opacity}}>
+        <h1 className="text-white text-5xl lg:text-9xl font-bold">They Trusted Me</h1>
         <div className="text-base text-white py-4 text-center">
           Over 150 millons streams in 15+ countries.
         </div>
         </motion.div>
        
 
-        <motion.div className="flex flex-row pt-32 space-x-32 h-[200px] animate-pulse" style={{x}} >
+        <motion.div className="flex flex-row pt-32 space-x-32 h-[80px] lg:h-[200px] animate-pulse" style={{x}} >
           <Image
             src={UMGLogo}
             alt="UMG Logo"
@@ -71,7 +71,7 @@ export default function Trust() {
             }}
           />
         </motion.div>
-        <div className="flex flex-col pt-32">
+        <div className="flex flex-col px-8 lg:pt-32 text-center">
           <motion.span className="text-gray-300" style={{x}} 
           transition={
             easeOut

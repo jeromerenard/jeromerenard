@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       
             <body className={`${inter.className} antialiased`}>
-             <div className="w-screen flex flex-col">
+             <div className="w-screen flex flex-col invisible lg:visible">
               <NavBar/>
               </div>
             <div>

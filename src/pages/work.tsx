@@ -14,16 +14,16 @@ export default function Work() {
 
   return (
     <main className="size-full h-screen py-16" id="work" ref={container}>
-      <div className="h-full w-full bg-black rounded-3xl flex items-center">
-        <motion.div className="flex-1 pl-24 2xl:pl-48 space-y-12" style={{opacity}}>
-          <h2 className="text-white pl-0 text-8xl 2xl:text-[8rem] font-bold">Work That</h2>
-          <h2 className="text-white 2xl:pl-48 text-8xl 2xl:text-9xl font-bold">Make A</h2>
-          <h2 className="text-white 2xl:pl-96 text-8xl 2xl:text-9xl font-bold">Difference</h2>
+      <div className="h-full w-full bg-black rounded-3xl flex flex-col lg:flex-row items-center pt-16 space-y-16">
+        <motion.div className="flex-col lg:flex-1  2xl:pl-48 space-y-4 lg:space-y-12 text-center lg:text-left" style={{opacity}}>
+          <h2 className="text-white 2xl:pl-0 text-5xl 2xl:text-9xl font-bold">Work That</h2>
+          <h2 className="text-white 2xl:pl-48 text-5xl 2xl:text-9xl font-bold">Make A</h2>
+          <h2 className="text-white 2xl:pl-96 text-5xl 2xl:text-9xl font-bold">Difference</h2>
         </motion.div>
-        <motion.div className="flex-1 pl-24 2xl:pl-64 pr-24 2xl:pr-64" style={{ y }}>
+        <motion.div className="flex-1 2xl:pl-64 2xl:pr-64 pb-8" style={{ y }}>
           <iframe
             title="Spotify Playlist Portfolio"
-            className="rounded-3xl h-[38dvh]"
+            className="rounded-3xl h-fill lg:h-[38dvh]"
             src="https://open.spotify.com/embed/playlist/4JTckBoo42kMfL08AqDjsF?utm_source=generator&theme=0"
             width="100%"
             height="352"

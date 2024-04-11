@@ -17,12 +17,12 @@ export default function Footer() {
   return (
     <motion.main
       style={{ y }}
-      className="size-full h-[85dvh] pt-[100px] items-center"
+      className="size-full h-[95dvh] lg:h-[85dvh] pt-[100px] items-center"
       ref={container}
     >
       <div className="h-full w-full bg-black flex flex-col items-center justify-center">
         <div className="flex">
-          <h2 className="text-center text-9xl text-white font-bold">
+          <h2 className="text-center text-5xl lg:text-9xl text-white font-bold">
             Let&apos;s Work
             <br />
             Together
