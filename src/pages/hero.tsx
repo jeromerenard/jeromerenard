@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { AuroraBackground } from "@/components/ui/aurora";
 import SocialIcon from "@/components/common/social-v";
 import CurrentDate from "@/components/common/currentdate";
+import TodayD from "@/components/common/date";
 import { useRef } from "react";
 import Link from "next/link";
 export default function Hero() {
@@ -54,7 +55,7 @@ export default function Hero() {
           </motion.div>
           <div className="absolute bottom-16 right-32 text-gray-500 font-medium">
         <span>
-          Los Angeles | <CurrentDate />
+          Los Angeles | <TodayD />
         </span>
       </div>
         </motion.div>

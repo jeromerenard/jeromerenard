@@ -1,5 +1,3 @@
-import React from 'react';
-
 const CurrentDate = () => {
   const today = new Date();
   const formattedDate = today.toLocaleDateString('en-US', {
