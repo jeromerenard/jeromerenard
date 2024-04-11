@@ -18,7 +18,7 @@ export default function Hero() {
   const y = useTransform(scrollYProgress, [1, 0], [0, -800]);
 
   return (
-    <main className="size-full h-full" id="hero" ref={container}>
+    <main className="size-full h-screen" id="hero" ref={container}>
       <AuroraBackground>
         <motion.div
           initial={{ opacity: 0.0, y: 20 }}
@@ -28,7 +28,7 @@ export default function Hero() {
             duration: 0.5,
             ease: "easeInOut",
           }}
-          className="relative flex flex-col gap-4 items-center justify-center px-16 w-full h-full"
+          className="relative flex flex-col gap-4 items-center justify-center px-16 w-full h-screen"
         >
           <h1 className="text-6xl lg:text-[11em] font-bold dark:text-white text-center leading-tight tracking-wide">
             Jerome <br />

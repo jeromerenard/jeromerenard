@@ -28,7 +28,7 @@ export default function Trust() {
     ref={container}
 
     >
-      <motion.div className="h-full bg-gray-900 w-full rounded-3xl flex flex-col items-center justify-center">
+      <motion.div className="h-screen bg-gray-900 w-full rounded-3xl flex flex-col items-center justify-center">
         <motion.div className="text-center" style={{y, opacity}}>
         <h1 className="text-white text-5xl lg:text-9xl font-bold">They Trusted Me</h1>
         <div className="text-base text-white py-4 text-center">
