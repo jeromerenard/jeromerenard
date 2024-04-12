@@ -1,6 +1,6 @@
 import Image from "next/image";
 import JrNeve from "../../public/JeromeRenardNeve.jpeg";
-import { useScroll, motion, useTransform } from "framer-motion";
+import { useScroll, motion, useTransform, useSpring } from "framer-motion";
 import { useRef } from "react";
 
 export default function About() {
@@ -11,20 +11,22 @@ export default function About() {
   });
 
   const height = useTransform(scrollYProgress, [0, 0.8], [50, 0]);
+  const scale = useSpring(useTransform(scrollYProgress, [0, .4], [.6, 1]));
 
   return (
-    <main className="size-full h-dvh lg:h-dvh lg:py-16 bg-white" ref={container}>
+    <main className="size-full lg:h-dvh lg:py-16 bg-white" ref={container}>
       <div className="lg:h-full w-full flex flex-col lg:flex-row items-center px-8 lg:px-64 lg:gap-32">
         <div className="flex-1 pb-8">
           <h2 className="text-4xl lg:text-9xl font-bold pb-2 lg:pb-16">This Is Me</h2>
-          <span className="lg:mr-48 text-balance">
-            Jerome Renard is Belgian-Born Mixing Engineer, living in sunny
-            Los-Angeles. <br />
-            As a mixer he believes that every song deserves to have an engineer
+          <div className="leading-relaxed font-normal lg:pr-32">
+            <p>Jerome Renard is Belgian-Born Mixing Engineer, living in sunny
+            Los-Angeles.</p>
+            <p>As a mixer he believes that every song deserves to have an engineer
             who understand the deepest needs and connections you have with your
-            music. <br />
+            music.</p>
+            
             As someone who has lived, experienced and engineered pop music
-            internationally, he’s able to bring a multicultural perspective to
+            internationally, he&apos;s able to bring a multicultural perspective to
             each project, helping to emphasize with goals of every artist he
             works with. <br />
             Having a deep fascination for the science behind the sound, his
@@ -42,9 +44,9 @@ export default function About() {
             World Studio, Universal Music brought him more than once in the
             Studio La Grande Armee in Paris, and his sessions with Simon
             Phillips, were the catalyst for bringing him to Los-Angeles.
-          </span>
+          </div>
         </div>
-        <motion.div className="flex-1">
+        <motion.div className="flex-1 pb-4 lg:pg-0" style={{scale}}>
           <Image
             src={JrNeve}
             alt="Jerome Renard"
@@ -62,6 +64,3 @@ export default function About() {
     </main>
   );
 }
-
-/*
-      */

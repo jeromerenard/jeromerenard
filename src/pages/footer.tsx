@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <motion.main
       
-      className="size-full h-[95dvh] lg:h-[85dvh]  items-center"
+      className="size-full h-dvh lg:h-[85dvh]  items-center"
       ref={container}
     >
       <div className="h-full w-full bg-black flex flex-col items-center justify-center relative">
@@ -41,15 +41,15 @@ export default function Footer() {
             <Link href="/contact">Get in touch</Link>
           </motion.button>
         </div>
-        <div className="mt-24">
+        <div className="mt-24 text-center">
           <span className="text-white">
-            Based in Los Angeles, CA. Working Worldwide
+            Based in Los Angeles, CA. <br />Working Worldwide
           </span>
         </div>
-        <div className="absolute bottom-16 left-24">
+        <div className="absolute bottom-8 lg:bottom-16 lg:left-24">
           <span className="text-white">Copyright © 2024 Jerome Renard</span>
         </div>
-        <div className="absolute bottom-16 right-24">
+        <div className="absolute bottom-24 lg:bottom-16 lg:right-24">
           <SocialIcon />
         </div>
       </div>
