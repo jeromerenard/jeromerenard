@@ -10,10 +10,10 @@ export default function About() {
     offset: ["start end", "end start"],
   });
 
-  const height = useTransform(scrollYProgress, [0, 0.9], [50, 0]);
+  const height = useTransform(scrollYProgress, [0, 0.8], [50, 0]);
 
   return (
-    <main className="size-full h-full lg:h-[80vh] lg:py-16" ref={container}>
+    <main className="size-full h-dvh lg:h-dvh lg:py-16 bg-white" ref={container}>
       <div className="lg:h-full w-full flex flex-col lg:flex-row items-center px-8 lg:px-64 lg:gap-32">
         <div className="flex-1 pb-8">
           <h2 className="text-4xl lg:text-9xl font-bold pb-2 lg:pb-16">This Is Me</h2>
@@ -54,9 +54,14 @@ export default function About() {
           />
         </motion.div>
       </div>
-      <motion.div style={{ height }} className="circleContainer">
+     <div className="">
+     <motion.div style={{ height }} className="circleContainer ">
         <div className="circle"></div>
       </motion.div>
+     </div>
     </main>
   );
 }
+
+/*
+      */

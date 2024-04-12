@@ -1,6 +1,7 @@
 import { useScroll, motion, useTransform, useSpring } from "framer-motion";
 import { useRef } from "react";
 import SocialIcon from "@/components/common/social-h";
+import { RiSendPlaneFill } from "react-icons/ri";
 import Link from "next/link";
 
 export default function Footer() {
@@ -11,32 +12,42 @@ export default function Footer() {
   });
 
   const x = useTransform(scrollYProgress, [0, 1], [0, 100]);
-  const y = useSpring(useTransform(scrollYProgress, [0, 1], [-50, 0]));
+  const y = useTransform(scrollYProgress, [1, 0], [0, -400]);
+  const opacity = useTransform(scrollYProgress, [0.5, 1], [0, 1]);
+
   const rotate = useTransform(scrollYProgress, [0, 1], [120, 90]);
 
   return (
     <motion.main
-      style={{ y }}
-      className="size-full h-[95dvh] lg:h-[85dvh] pt-[100px] items-center"
+      
+      className="size-full h-[95dvh] lg:h-[85dvh]  items-center"
       ref={container}
     >
-      <div className="h-full w-full bg-black flex flex-col items-center justify-center">
-        <div className="flex">
+      <div className="h-full w-full bg-black flex flex-col items-center justify-center relative">
+        <motion.div className="flex" style={{y, opacity}}>
           <h2 className="text-center text-5xl lg:text-9xl text-white font-bold">
             Let&apos;s Work
             <br />
             Together
           </h2>
-        </div>
+        </motion.div>
         <div className="mt-24">
           <motion.button
-            className="px-8 h-auto py-3 text-xl text-jgold border-2 border-spacing-16 border-jgold rounded-full shadow-2xl shadow-cyan-500/60"
+            className="px-8 h-auto py-3 text-xl text-jgold border-2 border-spacing-16 border-jgold rounded-full shadow-2xl shadow-cyan-500/60 items-center space-x-4 inline-flex"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <Link href="/contact">
-            Get in touch</Link>
+            <RiSendPlaneFill />
+            <Link href="/contact">Get in touch</Link>
           </motion.button>
+        </div>
+        <div className="mt-24">
+          <span className="text-white">
+            Based in Los Angeles, CA. Working Worldwide
+          </span>
+        </div>
+        <div className="absolute bottom-16 left-24">
+          <span className="text-white">Copyright © 2024 Jerome Renard</span>
         </div>
         <div className="absolute bottom-16 right-24">
           <SocialIcon />

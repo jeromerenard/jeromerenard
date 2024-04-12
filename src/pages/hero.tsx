@@ -7,6 +7,8 @@ import SocialIconHB from "@/components/common/social-h";
 import CurrentDate from "@/components/common/currentdate";
 import { useRef } from "react";
 import Link from "next/link";
+import { RiSendPlaneFill } from "react-icons/ri";
+
 export default function Hero() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -43,18 +45,22 @@ export default function Hero() {
 
           <div className="mt-16">
             <motion.button
-              className="px-8 h-auto py-3 text-xl text-jgold text-semibold border-2 border-spacing-16 border-jgold rounded-full shadow-2xl shadow-jblue/60"
+              className="inline-flex px-8 h-auto py-3 text-xl text-jgold text-semibold border-2 border-spacing-16 border-jgold rounded-full shadow-2xl shadow-jblue/60 items-center space-x-4"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              <Link href="/contact">Let&apos;s work together.</Link>
+              <RiSendPlaneFill />
+              <Link href="/contact">Let&apos;s work together</Link>
             </motion.button>
           </div>
-          <motion.div className="absolute left-24 bottom-16 invisible lg:visible" style={{ y }}>
-            <SocialIcon/>
+          <motion.div
+            className="absolute left-24 bottom-16 invisible lg:visible"
+            style={{ y }}
+          >
+            <SocialIcon />
           </motion.div>
-          <motion.div className="absolute bottom-16 lg:invisible" style={{ y }}>
-            <SocialIconHB/>
+          <motion.div className="absolute bottom-16 visible lg:invisible" style={{ y }}>
+            <SocialIconHB />
           </motion.div>
           <div className="absolute bottom-16 right-32 text-gray-500 font-medium invisible lg:visible">
             <span>

@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Hero />
-      <div className="w-full h-full px-2 lg:px-16">
+      <div className="w-full h-full px-2 lg:px-16 bg-white">
         <Test />
       </div>
       <About />

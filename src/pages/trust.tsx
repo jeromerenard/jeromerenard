@@ -23,12 +23,14 @@ export default function Trust() {
   
   const opacity = useTransform(scrollYProgress, [0.5, 1], [0, 1]);
 
+  const name1left = ["James Guido"]
+
   return (
-    <motion.main className="size-full h-screen py-16" id="trust"
+    <motion.main className="size-full h-dvh py-16" id="trust"
     ref={container}
 
     >
-      <motion.div className="h-screen bg-gray-900 w-full rounded-3xl flex flex-col items-center justify-center">
+      <motion.div className="h-full bg-gray-900 w-full rounded-3xl flex flex-col items-center justify-center">
         <motion.div className="text-center" style={{y, opacity}}>
         <h1 className="text-white text-5xl lg:text-9xl font-bold">They Trusted Me</h1>
         <div className="text-base text-white py-4 text-center">
@@ -37,8 +39,9 @@ export default function Trust() {
         </motion.div>
        
 
-        <motion.div className="flex flex-row pt-32 space-x-32 h-[80px] lg:h-[200px] animate-pulse" style={{x}} >
+        <motion.div className="flex flex-row pt-32 space-x-32 h-[80px] lg:h-[200px]" style={{x}} >
           <Image
+          className="invert"           
             src={UMGLogo}
             alt="UMG Logo"
             style={{
@@ -47,6 +50,7 @@ export default function Trust() {
             }}
           />
           <Image
+            className="invert"             
             src={SonyLogo}
             alt="Sony Logo"
             style={{
@@ -55,6 +59,7 @@ export default function Trust() {
             }}
           />
           <Image
+          className="invert"           
             src={TikTokLogo}
             alt="Sony Logo"
             style={{
@@ -63,6 +68,7 @@ export default function Trust() {
             }}
           />
           <Image
+          className="invert"           
             src={TheVoiceLogo}
             alt="Sony Logo"
             style={{
