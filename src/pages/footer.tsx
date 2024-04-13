@@ -23,7 +23,7 @@ export default function Footer() {
       className="size-full h-dvh lg:h-[85dvh]  items-center"
       ref={container}
     >
-      <div className="h-full w-full bg-black flex flex-col items-center justify-center relative lg:space-y-20 2xl:space-y-24">
+      <div className="h-full w-full bg-black flex flex-col items-center justify-center relative lg:space-y-20 3xl:space-y-24">
         <motion.div className="flex" style={{y, opacity}}>
           <h2 className="text-center text-5xl lg:text-8xl 2xl:text-9xl text-white font-bold">
             Let&apos;s Work
