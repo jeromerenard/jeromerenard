@@ -23,16 +23,16 @@ export default function Trust() {
 
   const opacity = useTransform(scrollYProgress, [0.5, 1], [0, 1]);
 
-  const scale = useSpring(useTransform(scrollYProgress, [.9, .6], [1, .6]));
+  const scale = useSpring(useTransform(scrollYProgress, [.9, .6], [1, .9]));
 
   const name1left = ["James Guido"];
 
   return (
     <motion.main className="size-full h-dvh py-16" id="trust" ref={container}>
-      <motion.div className="h-full bg-gray-900 w-full rounded-3xl flex flex-col items-center justify-center space-y-48">
+      <motion.div className="h-full bg-gray-900 w-full rounded-3xl flex flex-col items-center justify-center space-y-20 lg:space-y-32 2xl:space-y-48">
         
         <motion.div className="text-center" style={{ y, opacity }}>
-          <h1 className="text-white text-5xl lg:text-9xl font-bold">
+          <h1 className="text-white text-5xl lg:text-8xl 2xl:text-9xl font-bold">
             They Trusted Me
           </h1>
           <div className="text-base text-white py-4 text-center">
@@ -41,8 +41,8 @@ export default function Trust() {
         </motion.div>
 
         <motion.div
-          className="flex flex-row space-x-32 h-[80px] lg:h-[80px]"
-          style={{ scale }}
+          className="flex flex-row space-x-4 lg:space-x-16 2xl:space-x-32 h-[24px] lg:h-16 2xl:h-[80px]"
+          style={{ scale, opacity }}
         >
           <Image
             className="invert"

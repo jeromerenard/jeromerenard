@@ -23,15 +23,15 @@ export default function Footer() {
       className="size-full h-dvh lg:h-[85dvh]  items-center"
       ref={container}
     >
-      <div className="h-full w-full bg-black flex flex-col items-center justify-center relative">
+      <div className="h-full w-full bg-black flex flex-col items-center justify-center relative lg:space-y-20 2xl:space-y-24">
         <motion.div className="flex" style={{y, opacity}}>
-          <h2 className="text-center text-5xl lg:text-9xl text-white font-bold">
+          <h2 className="text-center text-5xl lg:text-8xl 2xl:text-9xl text-white font-bold">
             Let&apos;s Work
             <br />
             Together
           </h2>
         </motion.div>
-        <div className="mt-24">
+        <div className="">
           <motion.button
             className="px-8 h-auto py-3 text-xl text-jgold border-2 border-spacing-16 border-jgold rounded-full shadow-2xl shadow-cyan-500/60 items-center space-x-4 inline-flex"
             whileHover={{ scale: 1.1 }}
@@ -41,7 +41,7 @@ export default function Footer() {
             <Link href="/contact">Get in touch</Link>
           </motion.button>
         </div>
-        <div className="mt-24 text-center">
+        <div className=" text-center">
           <span className="text-white">
             Based in Los Angeles, CA. <br />Working Worldwide
           </span>

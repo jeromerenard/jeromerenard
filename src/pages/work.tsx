@@ -14,11 +14,11 @@ export default function Work() {
 
   return (
     <main className="size-full h-dvh py-16" id="work" ref={container}>
-      <div className="h-full w-full bg-black rounded-3xl flex flex-col lg:flex-row items-center pt-16 space-y-16">
-        <motion.div className="flex-col lg:flex-1  2xl:pl-48 space-y-4 lg:space-y-12 text-center lg:text-left" style={{opacity}}>
-          <h2 className="text-white 2xl:pl-0 text-5xl 2xl:text-9xl font-bold">Work That</h2>
-          <h2 className="text-white 2xl:pl-48 text-5xl 2xl:text-9xl font-bold">Make A</h2>
-          <h2 className="text-white 2xl:pl-96 text-5xl 2xl:text-9xl font-bold">Difference</h2>
+      <div className="h-full w-full bg-black rounded-3xl flex flex-col lg:flex-row items-center pt-16 lg:pt-0 lg:px-8 space-y-16">
+        <motion.div className="flex-col lg:flex-1 2xl:pl-48 space-y-4 lg:space-y-10 2xl:space-y-12 text-center lg:text-left" style={{opacity}}>
+          <h2 className="text-white lg:pl-0 2xl:pl-0 text-5xl lg:text-7xl 2xl:text-9xl font-bold">Work That</h2>
+          <h2 className="text-white lg:pl-16 2xl:pl-48 text-5xl lg:text-7xl 2xl:text-9xl font-bold">Make A</h2>
+          <h2 className="text-white lg:pl-32 2xl:pl-96 text-5xl lg:text-7xl 2xl:text-9xl font-bold">Difference</h2>
         </motion.div>
         <motion.div className="flex-1 2xl:pl-64 2xl:pr-64 pb-8" style={{ y }}>
           <iframe
