@@ -10,7 +10,7 @@ const links = [
     },
     {
         title: "Work",
-        url: '#social'
+        url: '#work'
     },
     {
         title: 'About',
@@ -29,7 +29,7 @@ export default function NavBar(){
         <nav className="glassmorphism rounded-3xl fixed center bottom-12 z-50 navbar place-self-center">
             <ul className="flex gap-4">
                 {links.map((link) => (
-                    <li className={clsx("p-5 transition-all duration-500 hover:text-[#DCA63D] hover:animate-bounce", pathname === link.url? 'text-[#DCA63D] font-bold' : 'text-gray-200')} key={link.title}><Link href={link.url}>{link.title}</Link></li>
+                    <li className={clsx("p-5 transition-all duration-500 hover:text-[#DCA63D] hover:animate-pulse", pathname === link.url? 'text-[#DCA63D] font-bold' : 'text-gray-200')} key={link.title}><Link href={link.url}>{link.title}</Link></li>
                 ))}
             </ul>
         </nav>

@@ -31,7 +31,7 @@ export default function Footer() {
             Together
           </h2>
         </motion.div>
-        <div className="">
+        <div className="mt-16 lg:mt-0">
           <motion.button
             className="px-8 h-auto py-3 text-xl text-jgold border-2 border-spacing-16 border-jgold rounded-full shadow-2xl shadow-cyan-500/60 items-center space-x-4 inline-flex"
             whileHover={{ scale: 1.1 }}
@@ -41,7 +41,7 @@ export default function Footer() {
             <Link href="/contact">Get in touch</Link>
           </motion.button>
         </div>
-        <div className=" text-center">
+        <div className="mt-24 lg:mt-0 text-center">
           <span className="text-white">
             Based in Los Angeles, CA. <br />Working Worldwide
           </span>

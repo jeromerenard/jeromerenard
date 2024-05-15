@@ -16,9 +16,9 @@ export default function About() {
   return (
     <main className="size-full lg:py-16 bg-white" ref={container}>
       <div className="2xl:h-full w-full flex flex-col lg:flex-row items-center px-8 lg:px-32 lg:space-x-8">
-        <div className="flex-1 pb-8">
+        <div className="flex-1 pb-8 2xl:translate-x-32">
           <h2 className="text-4xl lg:text-8xl font-bold pb-2 lg:pb-4 2xl:pb-16">This Is Me</h2>
-          <div className="leading-relaxed font-normal 2xl:pr-32">
+          <div className="leading-relaxed font-normal 2xl:pr-32 lg:w-5/6">
             <p>Jerome Renard is Belgian-Born Mixing Engineer, living in sunny
             Los-Angeles.</p>
             <p>As a mixer he believes that every song deserves to have an engineer

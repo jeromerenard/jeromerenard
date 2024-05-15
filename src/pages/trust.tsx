@@ -29,10 +29,10 @@ export default function Trust() {
 
   return (
     <motion.main className="size-full h-dvh py-16" id="trust" ref={container}>
-      <motion.div className="h-full bg-gray-900 w-full rounded-3xl flex flex-col items-center justify-center space-y-20 lg:space-y-32 2xl:space-y-48">
+      <motion.div className="h-full border-2 border-white/20 bg-neutral-950 shadow-stone-800 shadow-md	 w-full rounded-3xl flex flex-col items-center justify-center space-y-20 lg:space-y-32 2xl:space-y-48">
         
         <motion.div className="text-center" style={{ y, opacity }}>
-          <h1 className="text-white text-5xl lg:text-8xl 2xl:text-9xl font-bold">
+          <h1 className="text-white text-5xl lg:text-8xl 2xl:text-8xl font-bold">
             They Trusted Me
           </h1>
           <div className="text-base text-white py-4 text-center">

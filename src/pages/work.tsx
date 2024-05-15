@@ -14,13 +14,13 @@ export default function Work() {
 
   return (
     <main className="size-full h-dvh py-16" id="work" ref={container}>
-      <div className="h-full w-full bg-black rounded-3xl flex flex-col lg:flex-row items-center pt-16 lg:pt-0 lg:px-8 2xl:px-16 space-y-16 2xl:space-x-16">
-        <motion.div className="flex-col lg:flex-1 space-y-4 lg:space-y-10 text-center lg:text-left" style={{opacity}}>
+      <div className="h-full w-full border-white/20 border-2  bg-black shadow-stone-800 shadow-md rounded-3xl flex flex-col lg:flex-row items-center pt-16 lg:pt-0 lg:px-8 2xl:px-16  2xl:space-x-32 gap-12 lg:gap-0">
+        <motion.div className="flex-col lg:flex-1 space-y-4 lg:space-y-10 text-center lg:text-left 2xl:translate-x-24" style={{opacity}}>
           <h2 className="text-white lg:pl-0 2xl:pl-0 text-5xl lg:text-7xl 2xl:text-8xl font-bold">Work That</h2>
           <h2 className="text-white lg:pl-16 2xl:pl-16 text-5xl lg:text-7xl 2xl:text-8xl font-bold">Make A</h2>
           <h2 className="text-white lg:pl-32 2xl:pl-32 text-5xl lg:text-7xl 2xl:text-8xl font-bold">Difference</h2>
         </motion.div>
-        <motion.div className="flex-1  pb-8" style={{ y }}>
+        <motion.div className="flex-1 pb-8" style={{ y }}>
           <iframe
             title="Spotify Playlist Portfolio"
             className="rounded-3xl h-fill lg:h-[38dvh]"
@@ -35,3 +35,8 @@ export default function Work() {
     </main>
   );
 }
+
+
+
+/*       <div className="h-full w-full bg-black rounded-3xl flex flex-col lg:flex-row items-center pt-16 lg:pt-0 lg:px-8 2xl:px-16  2xl:space-x-32 gap-12 lg:gap-0">
+*/

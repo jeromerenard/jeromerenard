@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { LampContainer } from "@/components/ui/lamp";
 import { motion } from "framer-motion";
 import Hero from "@/pages/hero";
+import Herotest from "@/pages/herotest";
 import Trust from "@/pages/trust";
 import Footer from "@/pages/footer";
 import Work from "@/pages/work";
@@ -38,7 +39,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <Hero />
+      <Herotest />
       <div className="w-full h-full px-2 lg:px-16 bg-white">
         <Test />
       </div>
