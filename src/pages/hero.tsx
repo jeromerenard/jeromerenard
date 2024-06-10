@@ -19,7 +19,7 @@ export default function Hero() {
   const y = useTransform(scrollYProgress, [1, 0], [0, -800]);
 
   return (
-    <main className="size-full h-screen relative" id="hero" ref={container}>
+    <main className="size-full h-dvh relative" id="hero" ref={container}>
         <motion.div
           initial={{ opacity: 0.0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
