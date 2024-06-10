@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { AuroraBackground } from "@/components/ui/aurora";
 import SocialIcon from "@/components/common/social-v";
 import SocialIconHB from "@/components/common/social-h";
 import CurrentDate from "@/components/common/currentdate";
@@ -58,12 +57,12 @@ export default function Herotest() {
             Mixing Worldwide Records.
           </div>
           <div className="text-xl text-center font-medium lg:text-xl 2xl:text-4xl text-slate-300 dark:text-neutral-200 py-4">
-            Over 150 millons streams in 15+ countries.
+            Over 250 millons streams in 15+ countries.
           </div>
 
           <div className="z-99 mt-4 lg:mt-8 2xl:mt-16">
             <motion.button
-              className="inline-flex px-4 lg:px-8 h-auto py-3 text-xl text-jgold text-semibold border-2 border-spacing-16 border-jgold rounded-full shadow-2xl shadow-jblue/60 items-center space-x-4"
+              className="inline-flex px-4 lg:px-8 h-auto py-4 sm:text-xl text-jgold text-semibold border-2 border-spacing-16 border-jgold rounded-full shadow-2xl shadow-jblue/60 items-center gap-4"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >

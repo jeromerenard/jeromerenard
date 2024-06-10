@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { AuroraBackground } from "@/components/ui/aurora";
 import SocialIcon from "@/components/common/social-v";
 import SocialIconHB from "@/components/common/social-h";
 import CurrentDate from "@/components/common/currentdate";
@@ -21,7 +20,6 @@ export default function Hero() {
 
   return (
     <main className="size-full h-screen relative" id="hero" ref={container}>
-      <AuroraBackground>
         <motion.div
           initial={{ opacity: 0.0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -68,7 +66,6 @@ export default function Hero() {
             </span>
           </div>
         </motion.div>
-      </AuroraBackground>
     </main>
   );
 }

@@ -42,7 +42,7 @@ export default function Footer() {
           </motion.button>
         </div>
         <div className="mt-24 lg:mt-0 text-center">
-          <span className="text-white">
+          <span className="text-gray-500 text-xl">
             Based in Los Angeles, CA. <br />Working Worldwide
           </span>
         </div>

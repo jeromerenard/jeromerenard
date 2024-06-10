@@ -1,6 +1,6 @@
 import { useScroll, motion, useTransform, easeOut, useSpring } from "framer-motion";
 import { use, useRef } from "react";
-import { LampContainer } from "@/components/ui/lamp";
+import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 
 import Image from "next/image";
 import UMGLogo from "../../public/UMGLogo.png";
@@ -36,7 +36,7 @@ export default function Trust() {
             They Trusted Me
           </h1>
           <div className="text-base text-white py-4 text-center">
-            Over 150 millons streams in 15+ countries.
+            Over 250 millons streams in 15+ countries.
           </div>
         </motion.div>
 
@@ -77,24 +77,31 @@ export default function Trust() {
             alt="Sony Logo"
             style={{
               width: "auto",
-              height: "120%",
+              height: "125%",
             }}
           />
         </motion.div>
         
         <div className="flex flex-col px-8 text-center">
-          <motion.span
-            className="text-gray-300"
-            style={{ x }}
-            transition={easeOut}
-          >
-            Jerome Renard - James Guido - Lana Del Rey - Madona - Aaron - Kyle
-          </motion.span>
-          <motion.span className="text-gray-300" style={{ x }}>
-            Jerome Renard - James Guido - Lana Del Rey - Madona - Aaron - Kyle
-          </motion.span>
+        <VelocityScroll
+      text="Sheldon Riley - Brooke - Ivri Lider - Sam Halabi - Erthling - Paradisio - Gaida - Sam Louis - Vitaa - Serel - Ryan Skyy - Max Landry - Kwanza Jones - Jon Car - Dan Knight - Victor Perry - Julie Elody - Tanae - Roberto Bellarosa - Jamiison - TonyB - SlabCity - Dina Layzis - Chelsko - Mishell Ivon"
+      default_velocity={1}
+      className="font-display text-center text-4xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
+    />
+  
         </div>
       </motion.div>
     </motion.main>
   );
 }
+        /*
+          <motion.span
+            className="text-gray-300"
+            style={{ x }}
+            transition={easeOut}
+          >
+            Sheldon Riley - Brooke - Ivri Lider - Sam Halabi - Erthling - Paradisio - Gaida - Sam Louis - Vitaa - Serel - Ryan Skyy - Max Landry - Kwanza Jones
+          </motion.span>
+          <motion.span className="text-gray-300" style={{ x }}>
+            Jon Car - Dan Knight - Victor Perry - Julie Elody - Tanae - Roberto Bellarosa - Jamiison - TonyB - SlabCity - Dina Layzis - Chelsko - Mishell Ivon
+          </motion.span>*/
