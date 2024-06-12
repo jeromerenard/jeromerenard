@@ -87,7 +87,7 @@ export default function Contact() {
   };
 
   return (
-    <main className="size-full h-screen">
+    <main className="size-full h-dvh">
       <div className="sm:h-full min-h-dvh w-full bg-black flex flex-col lg:flex-row px-8 lg:px-32 py-16 lg:py-32">
         <div className="lg:flex-1 2xl:pl-96">
           <h1 className="sm:max-w-[70%] text-4xl lg:text-7xl 2xl:text-8xl font-bold text-white">
@@ -98,7 +98,7 @@ export default function Contact() {
               Click here to schedule a call or fill out the form.
             </span>
           </div>
-          <div className="pt-24">
+          <div className="pt-4 sm:pt-24">
             <SocialIconHB />
           </div>
         </div>
