@@ -38,7 +38,7 @@ export default function Home() {
   });
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex min-h-dvh flex-col items-center justify-between">
       <Herotest />
       <div className="w-full h-full px-2 lg:px-16 bg-white">
         <Test />
