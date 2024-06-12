@@ -3,6 +3,7 @@ import React, { useState} from "react";
 import emailjs from "@emailjs/browser";
 import CurrentDate from "@/components/common/currentdate";
 import { RiSendPlaneFill } from "react-icons/ri";
+import SocialIconHB from "@/components/common/social-h";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -96,6 +97,9 @@ export default function Contact() {
             <span className="text-gray-500">
               Click here to schedule a call or fill out the form.
             </span>
+          </div>
+          <div className="pt-24">
+            <SocialIconHB />
           </div>
         </div>
         <div className="lg:flex-1 h-full py-8 lg:py-0">

@@ -7,6 +7,8 @@ import CurrentDate from "@/components/common/currentdate";
 import { useRef } from "react";
 import Link from "next/link";
 import { RiSendPlaneFill } from "react-icons/ri";
+import { ReCaptchaProvider } from "next-recaptcha-v3";
+
 
 export default function Hero() {
   const container = useRef(null);
