@@ -189,7 +189,7 @@ export default function Contact() {
           <div className="text-white mt-6">{renderStatus()}</div>
         </div>
       </div>
-      <div className="absolute bottom-4 right-1/2 translate-x-1/2 sm:-translate-x-0 sm:bottom-16 sm:right-24 text-gray-500">
+      <div className="absolute bottom-1 right-1/2 translate-x-1/2 sm:-translate-x-0 sm:bottom-16 sm:right-24 text-gray-500">
         <span>
           Los Angeles | <CurrentDate />
         </span>

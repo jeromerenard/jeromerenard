@@ -9,6 +9,8 @@ import Link from "next/link";
 import { RiSendPlaneFill } from "react-icons/ri";
 import Image from "next/image";
 import JRnbg from "../../public/JRnobg.png";
+import {Button, ButtonGroup} from "@nextui-org/button";
+
 
 export default function Herotest() {
   const container = useRef(null);
@@ -62,13 +64,14 @@ export default function Herotest() {
 
           <div className="z-99 mt-4 lg:mt-8 2xl:mt-16">
             <motion.button
-              className="inline-flex px-4 lg:px-8 h-auto py-4 sm:text-xl text-jgold text-semibold border-2 border-spacing-16 border-jgold rounded-full shadow-2xl shadow-jblue/60 items-center gap-4"
+              className="inline-flex px-4 lg:px-8 h-auto py-4 sm:text-xl text-jgold text-semibold border-2 border-spacing-16 border-jgold rounded-full shadow-2xl shadow-cyan-500/60 items-center gap-4"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
               <RiSendPlaneFill />
               <Link href="/contact">Let&apos;s work together</Link>
             </motion.button>
+          
           </div>
         </motion.div>
         <motion.div

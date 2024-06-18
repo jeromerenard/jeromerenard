@@ -12,6 +12,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@motionone/utils": "^10.17.0",
+    "@nextui-org/button": "^2.0.33",
     "@radix-ui/react-label": "^2.0.2",
     "@studio-freight/lenis": "^1.0.42",
     "@tabler/icons-react": "^3.1.0",
