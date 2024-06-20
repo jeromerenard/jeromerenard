@@ -51,14 +51,14 @@ export default function Herotest() {
             ease: "easeInOut",}}
         >
           
-          <h1 className="text-6xl lg:text-8xl 2xl:text-[11em] text-slate-200 font-bold text-center leading-tight tracking-wide">
+          <h1 className="text-6xl lg:text-8xl 2xl:text-[9em] text-slate-200 font-bold text-center leading-tight tracking-wide">
             Jerome <br />
             Renard
           </h1>
-          <div className="font-semibold text-center text-xl lg:text-3xl 2xl:text-6xl text-slate-200 dark:text-neutral-200 py-4">
+          <div className="font-semibold text-center text-xl lg:text-3xl 2xl:text-5xl text-slate-200 dark:text-neutral-200 py-4">
             Mixing Worldwide Records.
           </div>
-          <div className="text-xl text-center font-medium lg:text-xl 2xl:text-4xl text-slate-300 dark:text-neutral-200 py-4">
+          <div className="text-xl text-center font-medium lg:text-xl 2xl:text-2xl text-slate-300 dark:text-neutral-200 py-4">
             Over 250 millons streams in 15+ countries.
           </div>
 

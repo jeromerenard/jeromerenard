@@ -1,7 +1,39 @@
+'use client';
+import Feeature2 from "@/pages/program/feature2";
+import Hero from "@/pages/program/hero";
+import Content from "@/pages/program/content";
+import CTA from "@/pages/program/cta";
+import Price from "@/pages/program/price";
+import News from "@/pages/program/news";
+import Banner from "@/pages/program/banner";
 export default function Program() {
   return (
     <main className="w-full h-full bg-black">
-      <div className="text-center py-32 text-white">
+      <Banner/>
+      <Hero/>
+      <Feeature2/>
+      <Content/>
+      <CTA/>
+      <Price/>
+      <News/>
+    </main>
+  );
+}
+
+/*
+     length
+        description
+        what's included
+        guests
+        sessions
+        mix songs with me
+        testimonaials
+        price
+        registration
+
+
+
+        <div className="text-center py-32 text-white">
         <h1 className="text-4xl  text-center">Mixing Workshop</h1>
         <h2 className="text-3xl">3-month program</h2>
         <h2>Advanced your mixing skills</h2>
@@ -71,18 +103,4 @@ export default function Program() {
         <p>Limited Spots Available – Enroll Today!</p>
         <p>Take the first step towards mastering your mix by joining our 3-month intensive workshop. Spaces are limited to ensure personalized attention, so don’t miss out on this opportunity to elevate your mixing skills.</p>
       </div>
-    </main>
-  );
-}
-
-/*
-     length
-        description
-        what's included
-        guests
-        sessions
-        mix songs with me
-        testimonaials
-        price
-        registration
         */
