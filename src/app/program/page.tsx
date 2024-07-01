@@ -6,6 +6,7 @@ import CTA from "@/pages/program/cta";
 import Price from "@/pages/program/price";
 import News from "@/pages/program/news";
 import Banner from "@/pages/program/banner";
+import Join from "@/pages/program/join";
 export default function Program() {
   return (
     <main className="w-full h-full bg-black">
@@ -15,6 +16,7 @@ export default function Program() {
       <Content/>
       <CTA/>
       <Price/>
+      <Join/>
       <News/>
     </main>
   );

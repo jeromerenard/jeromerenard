@@ -11,6 +11,7 @@ import Work from "@/pages/work";
 import About from "@/pages/about";
 import Test from "@/pages/text";
 import Lenis from "@studio-freight/lenis";
+import BannerMP from "@/pages/banner";
 
 function timeout(delay: number) {
   return new Promise((res) => setTimeout(res, delay));
@@ -38,7 +39,8 @@ export default function Home() {
   });
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="w-full min-h-sreen">
+      <BannerMP />
       <Herotest />
       <div className="w-full h-full px-2 lg:px-16 bg-white">
         <Test />
@@ -49,3 +51,4 @@ export default function Home() {
   );
 }
 /*#0E1011*/
+/* flex min-h-screen flex-col items-center  */

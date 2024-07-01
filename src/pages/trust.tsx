@@ -52,7 +52,7 @@ export default function Trust() {
             alt="UMG Logo"
             style={{
               width: "auto",
-              height: "100%",
+              height: "80px",
             }}
           />
           <Image
@@ -61,7 +61,7 @@ export default function Trust() {
             alt="Sony Logo"
             style={{
               width: "auto",
-              height: "100%",
+              height: "85px",
             }}
           />
           <Image
@@ -70,7 +70,7 @@ export default function Trust() {
             alt="Sony Logo"
             style={{
               width: "auto",
-              height: "120%",
+              height: "96px",
             }}
           />
           <Image
@@ -79,7 +79,7 @@ export default function Trust() {
             alt="Sony Logo"
             style={{
               width: "auto",
-              height: "125%",
+              height: "120px",
             }}
           />
         </motion.div>

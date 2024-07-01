@@ -38,7 +38,7 @@ export default function Herotest() {
           className="-z-10 absolute top-16 lg:top-4 translate-x-8 lg:translate-x-16 vignette"
           style={{ opacity }}
         >
-          <Image src={JRnbg} alt="Jerome Renard" className="" width={900} height={1274}/>
+          <Image src={JRnbg} alt="Jerome Renard" className="" width={800} height={1274}/>
         </motion.div>
         <motion.div
           className="mt-32 lg:mt-48 items-center flex flex-col gap-1 lg:gap-2 2xl:gap-4"
@@ -51,18 +51,18 @@ export default function Herotest() {
             ease: "easeInOut",}}
         >
           
-          <h1 className="text-6xl lg:text-8xl 2xl:text-[9em] text-slate-200 font-bold text-center leading-tight tracking-wide">
-            Jerome <br />
+          <h1 className="text-6xl lg:text-8xl 2xl:text-[7em] text-slate-200 font-bold text-center leading-tight tracking-wide">
+            Jerome 
             Renard
           </h1>
-          <div className="font-semibold text-center text-xl lg:text-3xl 2xl:text-5xl text-slate-200 dark:text-neutral-200 py-4">
-            Mixing Worldwide Records.
+          <div className="font-semibold text-center text-xl lg:text-3xl 2xl:text-4xl text-slate-200 dark:text-neutral-200 py-2">
+            Mixing Worldwide Records
           </div>
-          <div className="text-xl text-center font-medium lg:text-xl 2xl:text-2xl text-slate-300 dark:text-neutral-200 py-4">
-            Over 250 millons streams in 15+ countries.
+          <div className="text-xl text-center font-medium lg:text-xl 2xl:text-2xl text-gray-500 dark:text-neutral-200 py-2">
+            Over 250 millons streams in 15+ countries
           </div>
 
-          <div className="z-99 mt-4 lg:mt-8 2xl:mt-16">
+          <div className="z-99 mt-4 lg:mt-8 2xl:mt-8">
             <motion.button
               className="inline-flex px-4 lg:px-8 h-auto py-4 sm:text-xl text-jgold text-semibold border-2 border-spacing-16 border-jgold rounded-full shadow-2xl shadow-cyan-500/60 items-center gap-4"
               whileHover={{ scale: 1.1 }}
