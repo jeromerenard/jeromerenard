@@ -1,14 +1,14 @@
 const links = [
-    { name: 'Open roles', href: '#' },
+    { name: 'My work', href: '/' },
     { name: 'Internship program', href: '#' },
     { name: 'Our values', href: '#' },
     { name: 'Meet our leadership', href: '#' },
   ]
   const stats = [
-    { name: 'Offices worldwide', value: '12' },
-    { name: 'Full-time colleagues', value: '300+' },
-    { name: 'Hours per week', value: '40' },
-    { name: 'Paid time off', value: 'Unlimited' },
+    { name: 'Streams', value: '+250M' },
+    { name: 'Songs Mixed', value: '+300' },
+    { name: 'past Mentee', value: '+30' },
+    { name: 'Feedback', value: 'Unlimited' },
   ]
   
   export default function Join() {
@@ -45,10 +45,9 @@ const links = [
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Join me</h2>
+            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Thank you!</h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
+              Any questions? Feel free to contact me via email <a href="mailto:info@jerome-renard.com">info@jerome-renard.com</a>
             </p>
           </div>
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">

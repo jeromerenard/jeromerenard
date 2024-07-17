@@ -10,14 +10,11 @@ import Join from "@/pages/program/join";
 export default function Program() {
   return (
     <main className="w-full h-full bg-black">
-      <Banner/>
       <Hero/>
       <Feeature2/>
       <Content/>
-      <CTA/>
       <Price/>
       <Join/>
-      <News/>
     </main>
   );
 }
