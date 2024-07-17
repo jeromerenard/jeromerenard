@@ -94,9 +94,9 @@ export default function Contact() {
             Let&apos;s work on a project together.
           </h1>
           <div className="pt-4 sm:pt-16">
-            <span className="text-gray-500">
+            <a className="text-gray-500" href="https://calendar.app.google/EeGMBEKbqcNJhCVK7" target="_blank">
               Click here to schedule a call or fill out the form.
-            </span>
+            </a>
           </div>
           <div className="pt-4 sm:pt-24">
             <SocialIconHB />

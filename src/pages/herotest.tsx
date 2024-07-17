@@ -35,7 +35,7 @@ export default function Herotest() {
           style={{ opacity }}
         ></motion.div>
         <motion.div
-          className="-z-10 absolute top-16 lg:top-4 translate-x-8 lg:translate-x-16 vignette"
+          className="-z-10 absolute top-4 lg:top-32 translate-x-8 lg:translate-x-16 vignette"
           style={{ opacity }}
         >
           <Image src={JRnbg} alt="Jerome Renard" className="" width={800} height={1274}/>

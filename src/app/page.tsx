@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <main className="w-full min-h-sreen">
-      <BannerMP />
+     
       <Herotest />
       <div className="w-full h-full px-2 lg:px-16 bg-white">
         <Test />

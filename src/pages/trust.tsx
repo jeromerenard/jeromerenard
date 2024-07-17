@@ -29,9 +29,9 @@ export default function Trust() {
 
   return (
     <motion.main className="size-full h-dvh py-16" id="trust" ref={container}>
-      <motion.div className="h-full border-2 border-white/20 bg-neutral-950 shadow-stone-800 shadow-md	 w-full rounded-3xl flex flex-col items-center justify-center space-y-16 lg:space-y-24 2xl:space-y-24">
+      <motion.div className="h-full border-2 border-white/20 bg-neutral-950 shadow-stone-800 shadow-md	 w-full rounded-3xl flex flex-col items-center justify-center space-y-12 lg:space-y-24 2xl:space-y-24">
         
-        <motion.div className="text-center space-y-8" style={{ y, opacity }}>
+        <motion.div className="text-center lg:space-y-8" style={{ y, opacity }}>
           <h1 className="text-white text-5xl lg:text-8xl 2xl:text-8xl font-bold">
             They Trusted Me
           </h1>
@@ -73,7 +73,7 @@ export default function Trust() {
             }}
           />
           <Image
-            className="invert"
+            className="invert -mt-2"
             src={TheVoiceLogo}
             alt="Sony Logo"
             style={{
@@ -85,9 +85,9 @@ export default function Trust() {
         
         <div className="flex flex-col px-8 text-center w-[100%] sm:w-2/3">
         <VelocityScroll
-      text="Sheldon Riley - Brooke - Ivri Lider - Sam Halabi - Erthling - Paradisio - Gaida - Sam Louis - Vitaa - Serel - Ryan Skyy - Max Landry - Kwanza Jones - Jon Car - Dan Knight - Victor Perry - Julie Elody - Tanae - Roberto Bellarosa - Jamiison - TonyB - SlabCity - Dina Layzis - Chelsko - Mishell Ivon"
+      text="Sheldon Riley - Brooke - Ivri Lider - Sam Halabi - Erthling - Paradisio - Gaida - Sam Louis - Vitaa - Serel - Ryan Skyy - Max Landry - Kwanza Jones - Jon Car - Dan Knight - Victor Perry - Julie Elody - Tanae - Roberto Bellarosa - Jamiison - TonyB - SlabCity - Dina Layzis - Chelsko - Mishell Ivon - The Kid Brothers -"
       default_velocity={.5}
-      className="font-display text-center text-xl font-bold tracking-[-0.02em] text-gray-600 drop-shadow-sm dark:text-white md:text-xl md:leading-[2.5rem]"
+      className="font-display text-center lg:text-xl font-bold tracking-[-0.02em] text-gray-600 drop-shadow-sm dark:text-white md:text-xl md:leading-[2.5rem]"
     />
   
         </div>
