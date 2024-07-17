@@ -49,25 +49,25 @@ export default function Content() {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
            
-              <p className='mt-2'>I divided this program in 3 phases. </p>
+              <p className='mt-2'>I divided this program in 3 stages. </p>
               
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
                   <CheckCircleIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                   <span>
-                    <strong className="font-semibold text-gray-900">Phase 1</strong> is about going over the basics of mixing and how to properly listen.
+                    <strong className="font-semibold text-gray-900">Stage 1</strong> is about going over the basics of mixing and how to properly listen.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
                   <CheckCircleIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                   <span>
-                    <strong className="font-semibold text-gray-900">Phase 2</strong> is about getting started on a first mix where I will provide a first multitrack. The goal here is for you to get some time to actually work on a session, ask feedback and go over things together. I will mix this session live, and you&apos;ll be able to see and hear the different approach. 
+                    <strong className="font-semibold text-gray-900">Stage 2</strong> is about getting started on a first mix where I will provide a first multitrack. The goal here is for you to get some time to actually work on a session, ask feedback and go over things together. I will mix this session live, and you&apos;ll be able to see and hear the different approaches. 
                   </span>
                 </li>
                 <li className="flex gap-x-3">
                   <CheckCircleIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                   <span>
-                    <strong className="font-semibold text-gray-900">Phase 3</strong> is all about going deeper into the craft. Once again, you&apos;ll get another multitrack to mix.
+                    <strong className="font-semibold text-gray-900">Stage 3</strong> is all about going deeper into the craft. Once again, you&apos;ll get another multitrack to mix. I will again mix this session live. You will have a lot more time to work on this session.
                   </span>
                 </li>
                    </ul>
