@@ -12,6 +12,8 @@ import About from "@/pages/about";
 import Test from "@/pages/text";
 import Lenis from "@studio-freight/lenis";
 import BannerMP from "@/pages/banner";
+import NavBar from "@/components/common/navbar";
+
 
 function timeout(delay: number) {
   return new Promise((res) => setTimeout(res, delay));
@@ -40,7 +42,10 @@ export default function Home() {
 
   return (
     <main className="w-full min-h-sreen">
-     
+             <div className="w-screen flex flex-col invisible lg:visible">
+             <NavBar/>
+              
+              </div>
       <Herotest />
       <div className="w-full h-full px-2 lg:px-16 bg-white">
         <Test />
