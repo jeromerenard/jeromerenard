@@ -7,7 +7,6 @@ import UMGLogo from "../../public/UMGLogo.png";
 import SonyLogo from "../../public/SonyLogo.png";
 import TheVoiceLogo from "../../public/TheVoiceLogo.png";
 import TikTokLogo from "../../public/TikTokLogo.png";
-import Logo from "./program/logo";
 
 export default function Trust() {
   const container = useRef(null);
