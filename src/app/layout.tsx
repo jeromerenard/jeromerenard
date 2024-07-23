@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/common/navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Jerome Renard",
@@ -20,6 +22,8 @@ export default function RootLayout({
          
             <div>
             {children}
+            <SpeedInsights/>
+            <Analytics />
             </div>
             </body>
     </html>

@@ -27,7 +27,7 @@ export default function Herotest() {
   const opacity = useTransform(scrollYProgress, [0.5, 1], [0, 1]);
 
   return (
-    <main className="size-full h-screen relative" id="hero" ref={container}>
+    <main className="size-full h-svh relative" id="hero" ref={container}>
       <div className="relative flex flex-col items-center justify-center px-16 w-full h-screen overflow-hidden">
         <div className="bg-black -z-30 absolute w-full h-full"></div>
         <motion.div

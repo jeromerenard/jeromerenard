@@ -29,9 +29,9 @@ export default function Trust() {
 
   return (
     <motion.main className="size-full h-dvh py-16" id="trust" ref={container}>
-      <motion.div className="h-full border-2 border-white/20 bg-neutral-950 shadow-stone-800 shadow-md	 w-full rounded-3xl flex flex-col items-center justify-center space-y-12 lg:space-y-24 2xl:space-y-24">
+      <motion.div className="h-full border-2 border-white/20 bg-neutral-950 shadow-stone-800 shadow-md w-full rounded-3xl flex flex-col items-center justify-center space-y-12 lg:space-y-24 2xl:space-y-24">
         
-        <motion.div className="text-center lg:space-y-8" style={{ y, opacity }}>
+        <motion.div className="text-center space-y-8 lg:space-y-8" style={{ y, opacity }}>
           <h1 className="text-white text-5xl lg:text-8xl 2xl:text-8xl font-bold">
             They Trusted Me
           </h1>
@@ -41,7 +41,7 @@ export default function Trust() {
         </motion.div>
 
         <motion.div
-          className="flex flex-row space-x-4 lg:space-x-16 2xl:space-x-32 h-[36px] sm:h-[24px] lg:h-16 2xl:h-[80px]"
+          className="flex flex-row space-x-4 lg:space-x-16 2xl:space-x-32 h-[24px] sm:h-[24px] lg:h-16 2xl:h-[80px]"
           style={{ scale, opacity }}
         >
          
@@ -83,7 +83,7 @@ export default function Trust() {
           />
         </motion.div>
         
-        <div className="flex flex-col px-8 text-center w-[100%] sm:w-2/3">
+        <div className="flex flex-col pt-12 lg:pt-0 px-8 text-center w-[100%] sm:w-2/3">
         <VelocityScroll
       text="Sheldon Riley - Brooke - Ivri Lider - Sam Halabi - Erthling - Paradisio - Gaida - Sam Louis - Vitaa - Serel - Ryan Skyy - Max Landry - Kwanza Jones - Jon Car - Dan Knight - Victor Perry - Julie Elody - Tanae - Roberto Bellarosa - Jamiison - TonyB - SlabCity - Dina Layzis - Chelsko - Mishell Ivon - The Kid Brothers -"
       default_velocity={.5}
